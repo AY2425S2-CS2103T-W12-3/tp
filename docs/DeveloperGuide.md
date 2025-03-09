@@ -327,7 +327,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * **Mainstream OS**: Windows, Linux, Unix, MacOS
 * **Private contact detail**: A contact detail that is not meant to be shared with others
-
+* **Use case**: Description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an actor (role played by user)
+* **MSS (Main Success Scenario)**: Describes the most straightforward interaction for a given use case, which assumes that nothing goes wrong
+* **Extensions**: "Add-on"s to the MSS that describe exceptional/alternative flow of events
+* **Student ID**: A unique identifier assigned to each student by the university
+* **Project**: The title of the research project a student is working on
 --------------------------------------------------------------------------------------------------------------------
 
 ## **Appendix: Instructions for manual testing**
