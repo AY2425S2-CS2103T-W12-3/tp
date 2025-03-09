@@ -320,8 +320,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 1.  Should work on any _mainstream OS_ as long as it has Java `17` or above installed.
 2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
 3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
+4.  The datafile created by the program should be stored in a human-readable format.
+5.  Should work without requiring installation (i.e. packaged as a .jar file).
+6.  Should work without an internet connection, without depending on an online server.
+7.  Should follow the Object-oriented paradigm for ease of future expansion, where commands can be added with minimal changes to existing code.
+8.  The GUI should not cause any resolution-related inconveniences to the user for standard screen resolutions 
+1920x1080 and higher, and, for screen scales 100% and 125%. It should remain usable (all functions can be used even if the user experience is not optimal) for resolutions 1280x720 and higher, and, for screen scales 150%.
+9.  The file size for the .jar file should not exceed 100MB, and documents like PDF files should not exceed 15MB/file.
+10. The Developer Guide and User Guide should be PDF-friendly.
 
-*{More to be added}*
 
 ### Glossary
 
