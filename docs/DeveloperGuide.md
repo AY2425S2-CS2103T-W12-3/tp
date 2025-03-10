@@ -288,30 +288,57 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is the `Prof-iler` and the **Actor** is the `user`, unless specified otherwise)
 
-**Use case: Delete a person**
+#### **Use case: UC01 List all students under User**
 
 **MSS**
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+1. User request to list all students
+2. Prof-iler displays the list of all students under user
+
+   Use case ends.
+
+**Extensions**
+* 2a. The List is empty.
+
+    Use case ends.
+
+#### **Use case: UC02 Delete a person**
+
+**MSS**
+
+1.  User requests to <u>list all students [(UC01)](#use-case-uc01-list-all-students-under-user)</u>
+2.  Prof-iler shows a list of students
+3.  User requests to delete a specific student in the list
+4.  Prof-iler deletes the student
 
     Use case ends.
 
 **Extensions**
 
-* 2a. The list is empty.
-
-  Use case ends.
-
 * 3a. The given index is invalid.
 
-    * 3a1. AddressBook shows an error message.
+    * 3a1. Prof-iler shows an error message.
 
       Use case resumes at step 2.
+
+#### **Use case: UC03 Add a student**
+
+**MSS**
+
+1. User enters the detail to add a student
+2. User request to add the student
+3. Prof-iler adds the student
+4. Prof-iler display the added student
+
+    Use case ends.
+
+**Extensions**
+* 2a. The input is invalid
+    * 2a1. Prof-iler shows an error message.
+    
+        Use case resumes at step 1.
 
 *{More to be added}*
 
