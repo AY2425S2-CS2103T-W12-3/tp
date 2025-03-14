@@ -378,7 +378,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 8.  The GUI should not cause any resolution-related inconveniences to the user for standard screen resolutions 
 1920x1080 and higher, and, for screen scales 100% and 125%. It should remain usable (all functions can be used even if the user experience is not optimal) for resolutions 1280x720 and higher, and, for screen scales 150%.
 9.  The file size for the .jar file should not exceed 100MB, and documents like PDF files should not exceed 15MB/file.
-10. The Developer Guide and User Guide should be PDF-friendly.
 
 
 ### Glossary
