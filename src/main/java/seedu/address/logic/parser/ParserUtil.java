@@ -98,13 +98,16 @@ public class ParserUtil {
     }
 
     /**
-     * Parses a {@code int progress} into a {@code Progress}.
+     * Parses a {@code String progress} into a {@code Progress}.
      *
      * @throws ParseException if the given {@code progress} is invalid.
      */
-    public static Progress parseProgress(int progress) throws ParseException {
-        requireNonNull(progress);
-        if (!Progress.isValidProgress(progress)) {
+    public static Progress parseProgress(String progress) throws ParseException {
+        if (progress.trim().isEmpty()) {
+            // Call overloaded constructor with progress 0,
+            // if progress prefix not in command
+            return new Progress();
+        } else if (!Progress.isValidProgress(progress)) {
             throw new ParseException(Progress.MESSAGE_CONSTRAINTS);
         }
         return new Progress(progress);

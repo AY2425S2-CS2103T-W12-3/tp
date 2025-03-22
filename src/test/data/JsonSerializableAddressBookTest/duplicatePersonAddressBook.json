@@ -5,7 +5,7 @@
     "phone": "94351253",
     "email": "alice@example.com",
     "project": "123, Jurong West Ave 6, #08-111",
-    "progress": 50,
+    "progress": "50",
     "tags": [ "friends" ]
   }, {
     "name": "Alice Pauline",
@@ -13,6 +13,6 @@
     "phone": "94351253",
     "email": "pauline@example.com",
     "project": "4th street",
-    "progress": 50
+    "progress": "50"
   } ]
 }

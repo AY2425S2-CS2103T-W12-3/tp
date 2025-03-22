@@ -28,14 +28,14 @@ public class ParserUtilTest {
     private static final String INVALID_PHONE = "+651234";
     private static final String INVALID_ADDRESS = " ";
     private static final String INVALID_EMAIL = "example.com";
-    private static final int INVALID_PROGRESS = 101;
+    private static final String INVALID_PROGRESS = "101";
     private static final String INVALID_TAG = "#friend";
 
     private static final String VALID_NAME = "Rachel Walker";
     private static final String VALID_ID = "A0263737F";
     private static final String VALID_PHONE = "123456";
     private static final String VALID_ADDRESS = "123 Main Street #0505";
-    private static final int VALID_PROGRESS = 50;
+    private static final String VALID_PROGRESS = "50";
     private static final String VALID_EMAIL = "rachel@example.com";
     private static final String VALID_TAG_1 = "friend";
     private static final String VALID_TAG_2 = "neighbour";
@@ -156,7 +156,7 @@ public class ParserUtilTest {
 
     @Test
     public void parseProgress_null_throwsNullPointerException() {
-        assertThrows(NullPointerException.class, () -> ParserUtil.parseProgress((Integer) null));
+        assertThrows(NullPointerException.class, () -> ParserUtil.parseProgress((String) null));
     }
 
     @Test
@@ -174,7 +174,21 @@ public class ParserUtilTest {
     public void parseProgress_validValueWithWhitespace_returnsTrimmedProgress() throws Exception {
         String progressWithWhitespace = WHITESPACE + VALID_PROGRESS + WHITESPACE;
         Progress expectedProgress = new Progress(VALID_PROGRESS);
-        assertEquals(expectedProgress, ParserUtil.parseProgress(Integer.parseInt(progressWithWhitespace.trim())));
+        assertEquals(expectedProgress, ParserUtil.parseProgress(progressWithWhitespace.trim()));
+    }
+
+    @Test
+    public void parseProgress_emptyString_returnsZeroProgress() throws Exception {
+        String emptyString = "";
+        Progress expectedProgress = new Progress();
+        assertEquals(expectedProgress, ParserUtil.parseProgress(emptyString));
+    }
+
+    @Test
+    public void parseProgress_emptyStringWithWhitespace_returnsZeroProgress() throws Exception {
+        String emptyString = WHITESPACE + "" + WHITESPACE + "" + WHITESPACE;
+        Progress expectedProgress = new Progress();
+        assertEquals(expectedProgress, ParserUtil.parseProgress(emptyString));
     }
 
     @Test

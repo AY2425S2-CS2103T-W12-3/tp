@@ -36,7 +36,7 @@ public class ProgressCommandParser implements Parser<ProgressCommand> {
 
         argMultimap.verifyNoDuplicatePrefixesFor(PREFIX_PROGRESS);
         Progress progress = ParserUtil.parseProgress(
-                Integer.parseInt(argMultimap.getValue(PREFIX_PROGRESS).get()));
+                argMultimap.getValue(PREFIX_PROGRESS).get());
 
         return new ProgressCommand(index, progress);
     }

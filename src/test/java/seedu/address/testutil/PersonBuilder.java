@@ -93,7 +93,7 @@ public class PersonBuilder {
     /**
      * Sets the {@code Progress} of the {@code Person} that we are building.
      */
-    public PersonBuilder withProgress(int progress) {
+    public PersonBuilder withProgress(String progress) {
         this.progress = new Progress(progress);
         return this;
     }

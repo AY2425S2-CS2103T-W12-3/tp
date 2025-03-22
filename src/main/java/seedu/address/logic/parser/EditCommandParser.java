@@ -68,7 +68,7 @@ public class EditCommandParser implements Parser<EditCommand> {
 
         if (argMultimap.getValue(PREFIX_PROGRESS).isPresent()) {
             editPersonDescriptor.setProgress(ParserUtil.parseProgress(
-                    Integer.parseInt(argMultimap.getValue(PREFIX_PROGRESS).get())));
+                   argMultimap.getValue(PREFIX_PROGRESS).get()));
         }
         parseTagsForEdit(argMultimap.getAllValues(PREFIX_TAG)).ifPresent(editPersonDescriptor::setTags);
 

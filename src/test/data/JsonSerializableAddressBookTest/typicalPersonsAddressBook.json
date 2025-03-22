@@ -6,7 +6,7 @@
     "phone" : "94351253",
     "email" : "alice@example.com",
     "project" : "123, Jurong West Ave 6, #08-111",
-    "progress": 50,
+    "progress": "50",
     "tags" : [ "friends" ]
   }, {
     "name" : "Benson Meier",
@@ -14,7 +14,7 @@
     "phone" : "98765432",
     "email" : "johnd@example.com",
     "project" : "311, Clementi Ave 2, #02-25",
-    "progress": 100,
+    "progress": "100",
     "tags" : [ "owesMoney", "friends" ]
   }, {
     "name" : "Carl Kurz",
@@ -22,7 +22,7 @@
     "phone" : "95352563",
     "email" : "heinz@example.com",
     "project" : "wall street",
-    "progress": 40,
+    "progress": "40",
     "tags" : [ ]
   }, {
     "name" : "Daniel Meier",
@@ -30,7 +30,7 @@
     "phone" : "87652533",
     "email" : "cornelia@example.com",
     "project" : "10th street",
-    "progress": 68,
+    "progress": "68",
     "tags" : [ "friends" ]
   }, {
     "name" : "Elle Meyer",
@@ -38,7 +38,7 @@
     "phone" : "9482224",
     "email" : "werner@example.com",
     "project" : "michegan ave",
-    "progress": 32,
+    "progress": "32",
     "tags" : [ ]
   }, {
     "name" : "Fiona Kunz",
@@ -46,7 +46,7 @@
     "phone" : "9482427",
     "email" : "lydia@example.com",
     "project" : "little tokyo",
-    "progress": 22,
+    "progress": "22",
     "tags" : [ ]
   }, {
     "name" : "George Best",
@@ -54,7 +54,7 @@
     "phone" : "9482442",
     "email" : "anna@example.com",
     "project" : "4th street",
-    "progress": 10,
+    "progress": "10",
     "tags" : [ ]
   } ]
 }

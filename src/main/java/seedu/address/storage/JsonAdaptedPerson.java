@@ -31,7 +31,7 @@ class JsonAdaptedPerson {
     private final String phone;
     private final String email;
     private final String project;
-    private final int progress;
+    private final String progress;
     private final List<JsonAdaptedTag> tags = new ArrayList<>();
 
     /**
@@ -43,7 +43,7 @@ class JsonAdaptedPerson {
             @JsonProperty("phone") String phone,
             @JsonProperty("email") String email,
             @JsonProperty("project") String project,
-            @JsonProperty("progress") int progress,
+            @JsonProperty("progress") String progress,
             @JsonProperty("tags") List<JsonAdaptedTag> tags) {
         this.name = name;
         this.id = id;
@@ -122,7 +122,7 @@ class JsonAdaptedPerson {
         }
         final Project modelProject = new Project(project);
 
-        if (Integer.valueOf(progress) == null) {
+        if (progress == null) {
             throw new IllegalValueException(String.format(MISSING_FIELD_MESSAGE_FORMAT,
                     Progress.class.getSimpleName()));
         }

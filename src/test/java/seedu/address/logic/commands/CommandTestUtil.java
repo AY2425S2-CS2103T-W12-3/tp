@@ -39,25 +39,37 @@ public class CommandTestUtil {
     public static final String VALID_EMAIL_BOB = "bob@example.com";
     public static final String VALID_PROJECT_AMY = "Project Amy-cable";
     public static final String VALID_PROJECT_BOB = "Project Bob-B";
+    public static final String VALID_PROGRESS_AMY = "78";
+    public static final String VALID_PROGRESS_BOB = "38";
+    public static final String VALID_NAME_IDA = "Ida Mueller";
+    public static final String VALID_ID_IDA = "A7283937J";
+    public static final String VALID_PHONE_IDA = "8482131";
+    public static final String VALID_EMAIL_IDA = "hans@example.com";
+    public static final String VALID_PROJECT_IDA = "chicago ave";
+    public static final String VALID_PROGRESS_IDA = "0";
 
-    public static final int VALID_PROGRESS_AMY = 78;
-    public static final int VALID_PROGRESS_BOB = 38;
 
     public static final String VALID_TAG_HUSBAND = "husband";
     public static final String VALID_TAG_FRIEND = "friend";
 
     public static final String NAME_DESC_AMY = " " + PREFIX_NAME + VALID_NAME_AMY;
     public static final String NAME_DESC_BOB = " " + PREFIX_NAME + VALID_NAME_BOB;
+    public static final String NAME_DESC_IDA = " " + PREFIX_NAME + VALID_NAME_IDA;
     public static final String ID_DESC_AMY = " " + PREFIX_ID + VALID_ID_AMY;
     public static final String ID_DESC_BOB = " " + PREFIX_ID + VALID_ID_BOB;
+    public static final String ID_DESC_IDA = " " + PREFIX_ID + VALID_ID_IDA;
     public static final String PHONE_DESC_AMY = " " + PREFIX_PHONE + VALID_PHONE_AMY;
     public static final String PHONE_DESC_BOB = " " + PREFIX_PHONE + VALID_PHONE_BOB;
+    public static final String PHONE_DESC_IDA = " " + PREFIX_PHONE + VALID_PHONE_IDA;
     public static final String EMAIL_DESC_AMY = " " + PREFIX_EMAIL + VALID_EMAIL_AMY;
     public static final String EMAIL_DESC_BOB = " " + PREFIX_EMAIL + VALID_EMAIL_BOB;
+    public static final String EMAIL_DESC_IDA = " " + PREFIX_EMAIL + VALID_EMAIL_IDA;
     public static final String PROJECT_DESC_AMY = " " + PREFIX_PROJECT + VALID_PROJECT_AMY;
     public static final String PROJECT_DESC_BOB = " " + PREFIX_PROJECT + VALID_PROJECT_BOB;
+    public static final String PROJECT_DESC_IDA = " " + PREFIX_PROJECT + VALID_PROJECT_IDA;
     public static final String PROGRESS_DESC_AMY = " " + PREFIX_PROGRESS + VALID_PROGRESS_AMY;
     public static final String PROGRESS_DESC_BOB = " " + PREFIX_PROGRESS + VALID_PROGRESS_BOB;
+    public static final String PROGRESS_DESC_IDA = " " + PREFIX_PROGRESS + VALID_PROGRESS_IDA;
     public static final String TAG_DESC_FRIEND = " " + PREFIX_TAG + VALID_TAG_FRIEND;
     public static final String TAG_DESC_HUSBAND = " " + PREFIX_TAG + VALID_TAG_HUSBAND;
 
@@ -66,8 +78,9 @@ public class CommandTestUtil {
     public static final String INVALID_PHONE_DESC = " " + PREFIX_PHONE + "911a"; // 'a' not allowed in phones
     public static final String INVALID_EMAIL_DESC = " " + PREFIX_EMAIL + "bob!yahoo"; // missing '@' symbol
     public static final String INVALID_PROJECT_DESC = " " + PREFIX_PROJECT; // empty string not allowed for projects
+    // progress needs to be between 0 and 100
     public static final String INVALID_PROGRESS_DESC = " " + PREFIX_PROGRESS + 101;
-    //empty string not allowed for progress
+
     public static final String INVALID_TAG_DESC = " " + PREFIX_TAG + "hubby*"; // '*' not allowed in tags
 
     public static final String PREAMBLE_WHITESPACE = "\t  \r  \n";
