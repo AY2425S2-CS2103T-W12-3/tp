@@ -1,0 +1,9 @@
+.progress-bar .track {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
