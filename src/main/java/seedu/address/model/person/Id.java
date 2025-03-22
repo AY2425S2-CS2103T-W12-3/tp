@@ -4,7 +4,7 @@ import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
 
 /**
- * Represents a Person's student ID in the address book.
+ * Represents a Person's student ID in prof-iler.
  * Guarantees: immutable; is valid as declared in {@link #isValidId(String)}
  */
 public class Id {

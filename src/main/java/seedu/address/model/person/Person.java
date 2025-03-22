@@ -11,7 +11,7 @@ import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.model.tag.Tag;
 
 /**
- * Represents a Person in the address book.
+ * Represents a Person in prof-iler.
  * Guarantees: details are present and not null, field values are validated, immutable.
  */
 public class Person {
