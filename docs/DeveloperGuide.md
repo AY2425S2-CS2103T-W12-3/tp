@@ -516,3 +516,7 @@ testers are expected to do more *exploratory* testing.
    1. _{explain how to simulate a missing/corrupted file, and the expected behavior}_
 
 1. _{ more test cases …​ }_
+
+## **Appendix: Planned Enhancements**
+Team size: 5
+1. Allow `Filter Command` to filter for projects that contain prefixes such as `pr/` and `t/` without error. Since a project name can take any value, the users are allowed to add projects with names such as pr/Project Prof-iler or even t/Project Orbital. However, `filter command` is not able to filter such projects efficiently in the presence of leading whitespaces in between commands. For example, `filter pr/   pr/Project Prof-iler` will lead to an error to indicate the presence of multiple prefixes `pr/`, similar for prefix `t/`. However, `filter pr/pr/Project Prof-iler` will work.
