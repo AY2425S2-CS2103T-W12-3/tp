@@ -41,12 +41,12 @@ public class HelpCommand extends Command {
                     + "Example: find John Doe",
 
             "filter: Display students by specific project or tag.\n"
-                    + "Usage: filter [pr/PROJECT] | [t/TAG]...\n"
+                    + "Usage: filter pr/PROJECT... or filter t/TAG...\n"
                     + "Example: filter pr/Orbital\n"
                     + "Example: filter t/Y3",
 
             "sort: Organize students by progress in ascending or descending order.\n"
-                    + "Usage: sort asc|desc\n"
+                    + "Usage: sort asc or sort desc\n"
                     + "Example: sort desc",
 
             "list: Show all students.\n"

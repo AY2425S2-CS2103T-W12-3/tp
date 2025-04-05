@@ -70,7 +70,7 @@ dependencies {
 }
 
 shadowJar {
-    archiveFileName = 'prof-iler.jar'
+    archiveFileName = 'Prof-iler.jar'
 }
 
 defaultTasks 'clean', 'test'
