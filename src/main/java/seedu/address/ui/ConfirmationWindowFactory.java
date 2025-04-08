@@ -1,7 +1,7 @@
 package seedu.address.ui;
 
 /**
- * Factory for creating ConfirmationWindow instances
+ * Factory for creating ConfirmationWindow instances. With inspiration from Copilot.
  */
 public class ConfirmationWindowFactory {
     private static ConfirmationWindowProvider provider = new DefaultConfirmationWindowProvider();

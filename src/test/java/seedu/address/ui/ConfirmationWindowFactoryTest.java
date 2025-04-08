@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import seedu.address.ui.ConfirmationWindowFactory.ConfirmationWindowProvider;
 
 /**
- * Unit tests for ConfirmationWindowFactory
+ * Unit tests for ConfirmationWindowFactory, with reference from Copilot
  */
 public class ConfirmationWindowFactoryTest {
 
