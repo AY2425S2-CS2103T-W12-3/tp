@@ -1,7 +1,7 @@
 package seedu.address.ui;
 
 /**
- * Stub class for testing ClearCommand class, as a Confirmation Window is implemented.
+ * Stub class for testing ClearCommand class, as a Confirmation Window is implemented. With inspiration from Copilot.
  */
 public class ClearConfirmationWindowStub implements ConfirmationWindow {
     private static ClearConfirmationWindowStub instance; // Singleton instance
